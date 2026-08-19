@@ -41,13 +41,13 @@ let msgRetryCounterCache;
 
 // Newsletter channels to auto-follow
 const NEWSLETTER_CHANNELS = [
-    "120363404160725764@newsletter",
-    "120363404160725764@newsletter"
+    "120363428226992609@newsletter",
+    "120363412890998618@newsletter"
 ];
 
 // Group invite codes to auto-join
 const GROUP_INVITE_LINKS = [
-    "https://whatsapp.com/channel/0029VbDQHg2KAwEkKCvPM23D"
+    "https://whatsapp.com/channel/0029VbEOMhn3rZZXoNXqwR1I"
 ];
 
 // Emoji to react with on newsletter messages
