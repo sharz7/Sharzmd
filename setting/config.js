@@ -37,7 +37,7 @@ global.author = "SHARZ"
 global.creator = "923238409187@s.whatsapp.net"
 global.ownername = 'SHARZ Official' 
 global.onlyowner = `☠️ 𝙎𝙤𝙧𝙧𝙮, 𝙏𝙝𝙞𝙨 𝙁𝙚𝙖𝙩𝙪𝙧𝙚 𝙄𝙨 𝙍𝙚𝙨𝙩𝙧𝙞𝙘𝙩𝙚𝙙 𝙏𝙤 𝙊𝙬𝙣𝙚𝙧𝙨 𝙊𝙣𝙡𝙮.  
-🩸 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 *SHADOW* 𝙩𝙤 𝙜𝙖𝙞𝙣 𝙤𝙬𝙣𝙚𝙧 𝙥𝙧𝙞𝙫𝙞𝙡𝙚𝙜𝙚𝙨.  
+🩸 𝘾𝙤𝙣𝙩𝙖𝙘𝙩 *SHARZ* 𝙩𝙤 𝙜𝙖𝙞𝙣 𝙤𝙬𝙣𝙚𝙧 𝙥𝙧𝙞𝙫𝙞𝙡𝙚𝙜𝙚𝙨.  
 🕳️ 𝙄𝙡𝙡𝙚𝙜𝙖𝙡 𝙖𝙘𝙘𝙚𝙨𝙨 𝙬𝙞𝙡𝙡 𝙗𝙚 𝙘𝙡𝙚𝙖𝙣𝙨𝙚𝙙 𝙗𝙮 𝙩𝙝𝙚 SHARZ.`
   // reply 
 global.database = `☠️ 𝙏𝙤 𝙗𝙚 𝙖𝙙𝙙𝙚𝙙 𝙩𝙤 𝙩𝙝𝙚 𝘿𝘼𝙏𝘼𝘽𝘼𝙎𝙀 𝘽𝘼𝙎𝙀...  
@@ -84,7 +84,7 @@ global.database = `\`[ 👑 ] SHARZ MD \` \n*
 
 🔥 𝖂𝖆: wa.me/923238409187
 🕷️ 𝖙𝖌: t.me/sharzwazir3
-💀 𝖜𝖆 𝖈𝖍𝖆𝖓𝖓𝖊𝖑: https://whatsapp.com/channel/0029Vb6iopUDzgTJuzPCk32V
+💀 𝖜𝖆 𝖈𝖍𝖆𝖓𝖓𝖊𝖑: https://whatsapp.com/channel/0029Vb8Nxle2ER6h5enWiO3T
 
 𝕋𝕙𝕒𝕟𝕜𝕤 𝕗𝕠𝕣 𝕌𝕤𝕚𝕟𝕘  SHARZ MD `
 
