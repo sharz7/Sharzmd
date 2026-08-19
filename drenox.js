@@ -106,18 +106,18 @@ if (!global.antiDeleteDM) global.antiDeleteDM = false
 const NEWSLETTER_JID = '120363404160725764@newsletter'
 
 const welcomeMessages = [
-  '👋 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ SHADOW ɢᴄ! ᴇɴᴊᴏʏ ʏᴏᴜʀ sᴛᴀʏ 💀',
-  '🎉 ғʀᴇsʜ ʙʟᴏᴏᴅ ɪɴ ᴛʜᴇ SHADOW ᴅᴇɴ! 😎',
-  '☠️ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ SHADOW🌑',
+  '👋 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ SHARZ ɢᴄ! ᴇɴᴊᴏʏ ʏᴏᴜʀ sᴛᴀʏ 💀',
+  '🎉 ғʀᴇsʜ ʙʟᴏᴏᴅ ɪɴ ᴛʜᴇ SHARZ ᴅᴇɴ! 😎',
+  '☠️ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ SHARZ 🌑',
   '👑 ᴀ ɴᴇᴡ MEMBER ᴊᴏɪɴs 🔥💀',
   '🖤 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ GC! 😈✨'
 ]
 
 const goodbyeMessages = [
   '👋 sᴇᴇ ʏᴏᴜ ʟᴀᴛᴇʀ! 😎',
-  '☠️ ᴍᴀʏ ᴛʜᴇ SHADOW ʀᴇᴍᴇᴍʙᴇʀ ʏᴏᴜ 💀🌑',
+  '☠️ ᴍᴀʏ ᴛʜᴇ SHARZ ʀᴇᴍᴇᴍʙᴇʀ ʏᴏᴜ 💀🌑',
   '🚀 ᴀɴᴏᴛʜᴇʀ ᴏɴᴇ ʙɪᴛᴇs ᴛʜᴇ ᴅᴜsᴛ! 😈',
-  '🖤 ᴛʜᴇ Shadow ᴡɪʟʟ ᴍɪss ʏᴏᴜ 💫',
+  '🖤 ᴛʜᴇ SHARZ ᴡɪʟʟ ᴍɪss ʏᴏᴜ 💫',
   '👻 ɢᴏᴏᴅʙʏᴇ ʟᴇɢᴇɴᴅ! 😎💀✨'
 ]
 
