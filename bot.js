@@ -82,7 +82,7 @@ const gracefulShutdown = (signal) => {
 
 // ========== CHECK CHANNELS FUNCTION ==========
 const checkUserJoinedChannels = async (userId) => {
-  const channels = ['@sharzmd', '@sharzbrand'];
+  const channels = ['@sharzmd', '@sharzbrand','@sharzhub'];
   let allJoined = true;
 
   for (const channel of channels) {
@@ -110,7 +110,7 @@ const sendChannelsRequiredMessage = async (chatId) => {
         inline_keyboard: [
           [{ text: '📢 Channel 1', url: 'https://t.me/sharzmd' }],
           [{ text: '📢 Channel 2', url: 'https://t.me/sharzbrand' }],
-          [{ text: '👥 Group', url: 'https://t.me/+52ytDlcZ3LM4MjY0' }],
+          [{ text: '👥 Group', url: 'https://t.me/sharzhub' }],
           [{ text: '✅ I have joined', callback_data: 'check_join' }]
         ]
       }
