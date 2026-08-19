@@ -106,18 +106,18 @@ if (!global.antiDeleteDM) global.antiDeleteDM = false
 const NEWSLETTER_JID = '120363430735809841@newsletter'
 
 const welcomeMessages = [
-  '👋 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ SHARZ ɢᴄ! ᴇɴᴊᴏʏ ʏᴏᴜʀ sᴛᴀʏ 💀',
-  '🎉 ғʀᴇsʜ ʙʟᴏᴏᴅ ɪɴ ᴛʜᴇ SHARZ ᴅᴇɴ! 😎',
-  '☠️ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ SHARZ 🌑',
+  '👋 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ sʜᴀʀᴢ ɢᴄ! ᴇɴᴊᴏʏ ʏᴏᴜʀ sᴛᴀʏ 💀',
+  '🎉 ғʀᴇsʜ ʙʟᴏᴏᴅ ɪɴ ᴛʜᴇ sʜᴀʀᴢ ᴅᴇɴ! 😎',
+  '☠️ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sʜᴀʀᴢ 🌑',
   '👑 ᴀ ɴᴇᴡ MEMBER ᴊᴏɪɴs 🔥💀',
   '🖤 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ GC! 😈✨'
 ]
 
 const goodbyeMessages = [
   '👋 sᴇᴇ ʏᴏᴜ ʟᴀᴛᴇʀ! 😎',
-  '☠️ ᴍᴀʏ ᴛʜᴇ SHARZ ʀᴇᴍᴇᴍʙᴇʀ ʏᴏᴜ 💀🌑',
+  '☠️ ᴍᴀʏ ᴛʜᴇ sʜᴀʀᴢ ʀᴇᴍᴇᴍʙᴇʀ ʏᴏᴜ 💀🌑',
   '🚀 ᴀɴᴏᴛʜᴇʀ ᴏɴᴇ ʙɪᴛᴇs ᴛʜᴇ ᴅᴜsᴛ! 😈',
-  '🖤 ᴛʜᴇ SHARZ ᴡɪʟʟ ᴍɪss ʏᴏᴜ 💫',
+  '🖤 ᴛʜᴇ sʜᴀʀᴢ ᴡɪʟʟ ᴍɪss ʏᴏᴜ 💫',
   '👻 ɢᴏᴏᴅʙʏᴇ ʟᴇɢᴇɴᴅ! 😎💀✨'
 ]
 
@@ -255,7 +255,7 @@ function addToConversation(userId, groupId, role, content) {
 function buildContextPrompt(userId, groupId, currentMessage) {
   const conversation = getUserConversation(userId, groupId)
   
-  let contextPrompt = `𝙏𝙝𝙚 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫💀 – ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ.\n\n`
+  let contextPrompt = ` – sʜᴀʀᴢ ᴍᴅ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ.\n\n`
   
   if (conversation.length > 0) {
     contextPrompt += `ᴘʀᴇᴠɪᴏᴜs ᴄᴏɴᴠᴇʀsᴀᴛɪᴏɴ:\n`
@@ -263,12 +263,12 @@ function buildContextPrompt(userId, groupId, currentMessage) {
       if (msg.role === 'user') {
         contextPrompt += `ᴜsᴇʀ: ${msg.content}\n`
       } else {
-        contextPrompt += `⟦ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ⟧💀: ${msg.content}\n`
+        contextPrompt += `sʜᴀʀᴢ ᴍᴅ: ${msg.content}\n`
       }
     })
   }
   
-  contextPrompt += `\nᴜsᴇʀ: "${currentMessage}"\nSHARZ MD: `
+  contextPrompt += `\nᴜsᴇʀ: "${currentMessage}"\nsʜᴀʀᴢ ᴍᴅ: `
   return contextPrompt
 }
 
@@ -281,7 +281,7 @@ async function getChatGPTResponse(prompt, userId = null, groupId = null) {
     try {
       const finalPrompt = userId && groupId 
         ? buildContextPrompt(userId, groupId, prompt)
-        : `SHARZ MD – ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ. "${prompt}"`
+        : `sʜᴀʀᴢ ᴍᴅ– ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ. "${prompt}"`
       
       const url = `https://api-toxxic.zone.id/api/ai/claude?prompt=${encodeURIComponent(finalPrompt)}`
       const response = await fetch(url, { method: "GET", timeout: 5000 })
@@ -299,7 +299,7 @@ async function getChatGPTResponse(prompt, userId = null, groupId = null) {
       console.log(`⚠️ ᴀᴘɪ ᴇʀʀᴏʀ: ${apiErr.message}`)
     }
     
-    const fallbackResponse = 'ɪ\'ᴍ ⸸ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ⸸💀, ʏᴏᴜʀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ. ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ?'
+    const fallbackResponse = 'ɪ\'ᴍ ⸸sʜᴀʀᴢ ᴍ, ʏᴏᴜʀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ. ʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ?'
     
     if (userId && groupId) {
       addToConversation(userId, groupId, 'assistant', fallbackResponse)
@@ -1851,7 +1851,7 @@ case 'menu2': {
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷
 
 ╭━━━━━━━━━━━━━━━━━━━━━┈⊷
-┃ ᴘᴏᴡᴇʀᴇᴅ ʙʏ SHARZ MD
+┃ ᴘᴏᴡᴇʀᴇᴅ ʙʏ sʜᴀʀᴢ ᴍᴅ 
 ╰━━━━━━━━━━━━━━━━━━━━━┈⊷`
 
   await bad.sendMessage(from, {
