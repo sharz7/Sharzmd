@@ -268,7 +268,7 @@ function buildContextPrompt(userId, groupId, currentMessage) {
     })
   }
   
-  contextPrompt += `\nᴜsᴇʀ: "${currentMessage}"\n✦ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ✦💀: `
+  contextPrompt += `\nᴜsᴇʀ: "${currentMessage}"\nSHARZ MD: `
   return contextPrompt
 }
 
@@ -281,7 +281,7 @@ async function getChatGPTResponse(prompt, userId = null, groupId = null) {
     try {
       const finalPrompt = userId && groupId 
         ? buildContextPrompt(userId, groupId, prompt)
-        : `⟦ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ⟧💀 – ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ. "${prompt}"`
+        : `SHARZ MD – ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡʜᴀᴛsᴀᴘᴘ. "${prompt}"`
       
       const url = `https://api-toxxic.zone.id/api/ai/claude?prompt=${encodeURIComponent(finalPrompt)}`
       const response = await fetch(url, { method: "GET", timeout: 5000 })
@@ -806,7 +806,7 @@ const greeting = currentHour < 12 ? 'ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 🌄' :
                  'ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌃'
 
 if (global.autobio) {
-  bad.updateProfileStatus(`𓆩 ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠ 𓆪 | ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}`).catch(_ => _)
+  bad.updateProfileStatus(`SHARZ MD | ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}`).catch(_ => _)
 }
     
     const reply = async (teks) => {
@@ -834,11 +834,11 @@ if (global.autobio) {
   }
       
       const frames = [
-        "╭━━〔 ⟦ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ⟧〕━━┈⊷\n┃✮│ ▱▱▱▱▱▱▱▱▱▱ 0%\n┃✮│ ⚡ ɪɴɪᴛɪᴀʟɪᴢɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
-        "╭━━〔 ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎ 〕━━┈⊷\n┃✮│ ▰▰▱▱▱▱▱▱▱▱ 25%\n┃✮│ 🔌 ᴄᴏɴɴᴇᴄᴛɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
-        "╭━━〔 to⸸ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ⸸〕━━┈⊷\n┃✮│ ▰▰▰▰▰▱▱▱▱▱ 50%\n┃✮│ 📦 ʟᴏᴀᴅɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
-        "╭━━〔 𖤐 𝑺𝒉𝒂𝒅𝒐𝒘 𖤐〕━━┈⊷\n┃✮│ ▰▰▰▰▰▰▰▱▱▱ 75%\n┃✮│ ⚙️ ᴘʀᴏᴄᴇssɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
-        "╭━━〔 ⟦ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ⟧ 〕━━┈⊷\n┃✮│ ▰▰▰▰▰▰▰▰▰▰ 100%\n┃✮│ ✅ sʏsᴛᴇᴍ ʀᴇᴀᴅʏ!\n╰━━━━━━━━━━━━━━┈⊷"
+        "╭━━〔 ⟦ SHARZ MD ⟧〕━━┈⊷\n┃✮│ ▱▱▱▱▱▱▱▱▱▱ 0%\n┃✮│ ⚡ ɪɴɪᴛɪᴀʟɪᴢɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
+        "╭━━〔 SHARZ MD〕━━┈⊷\n┃✮│ ▰▰▱▱▱▱▱▱▱▱ 25%\n┃✮│ 🔌 ᴄᴏɴɴᴇᴄᴛɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
+        "╭━━〔 to⸸ SHARZ MD⸸〕━━┈⊷\n┃✮│ ▰▰▰▰▰▱▱▱▱▱ 50%\n┃✮│ 📦 ʟᴏᴀᴅɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
+        "╭━━〔 𖤐 SHARZ 𖤐〕━━┈⊷\n┃✮│ ▰▰▰▰▰▰▰▱▱▱ 75%\n┃✮│ ⚙️ ᴘʀᴏᴄᴇssɪɴɢ...\n╰━━━━━━━━━━━━━━┈⊷",
+        "╭━━〔 ⟦ SHARZ MD⟧ 〕━━┈⊷\n┃✮│ ▰▰▰▰▰▰▰▰▰▰ 100%\n┃✮│ ✅ sʏsᴛᴇᴍ ʀᴇᴀᴅʏ!\n╰━━━━━━━━━━━━━━┈⊷"
       ]
       
       try {
@@ -1862,7 +1862,7 @@ case 'menu2': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
       }
     }
@@ -2003,7 +2003,7 @@ case 'mymenu': {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: NEWSLETTER_JID,
-            newsletterName: "☠ Shadow MD ☠",
+            newsletterName: "SHARZ MD",
             serverMessageId: -1
         }
     }
@@ -2081,7 +2081,7 @@ case 'groupmenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName:  "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2138,7 +2138,7 @@ case 'downloadmenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "to☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "to SHARZ MD",
         serverMessageId: -1
         }
     }
@@ -2218,7 +2218,7 @@ case 'funmenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2265,7 +2265,7 @@ case 'gamemenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2358,7 +2358,7 @@ case 'animemenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2410,7 +2410,7 @@ case 'stickermenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2509,7 +2509,7 @@ case 'utilitymenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2552,7 +2552,7 @@ case 'voicemenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2644,7 +2644,7 @@ case 'imagemenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2687,7 +2687,7 @@ case 'emojimenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -2782,7 +2782,7 @@ case 'logomenu': {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
         newsletterJid: NEWSLETTER_JID,
-        newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+        newsletterName: "SHARZ MD",
         serverMessageId: -1
               }
     }
@@ -3139,7 +3139,7 @@ case 'siminfo': {
             txt += `*Record #${i+1}*\n📱: ${r.mobile}\n👤: ${r.name}\n🆔: ${r.cnic}\n🏠: ${r.address}\n\n`
         })
 
-        txt += `\n> ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`
+        txt += `\n> SHARZ MD`
 
         await bad.sendMessage(from, { text: txt }, { quoted: mek })
 
@@ -3221,7 +3221,7 @@ case 'alive': {
   const uptime = runtime(process.uptime());
   reply(
 `🟢 *Bot Status:* ONLINE
-👑 *Owner:* ༒︎ 𝑺𝑯𝑨𝑫𝑶𝑾 ༒︎
+👑 *Owner:* SHARZ 
 ⏱️ *Uptime:* ${uptime}`
   );
 }
@@ -3272,7 +3272,7 @@ case 'broadcast': {
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
       newsletterJid: NEWSLETTER_JID,
-      newsletterName: "☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎",
+      newsletterName: "SHARZ MD",
       serverMessageId: -1
     }
   }
@@ -3398,7 +3398,7 @@ break
 
 case 'restart': {
   if (!isCreator) return reply("ᴏᴡɴᴇʀ ᴏɴʟʏ.")
-  reply('ʀᴇsᴛᴀʀᴛɪɴɢ ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ...')
+  reply('ʀᴇsᴛᴀʀᴛɪɴɢ SHARZ MD...')
   exec('pm2 restart all')
 }
 break
@@ -5295,7 +5295,7 @@ case 'tiktokstalk2': {
   if (!text) return reply(`*🎵 ᴛɪᴋᴛᴏᴋ sᴛᴀʟᴋ 2*
 
 💡 ᴇxᴀᴍᴘʟᴇ:
-${prefix}ttstalk2 ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`)
+${prefix}ttstalk2 SHARZ MD`)
 
   try {
     const response = await axios.get(`${API_BASE}/tiktok-user2?apikey=${API_KEY}&user=${encodeURIComponent(text)}`)
@@ -5334,7 +5334,7 @@ case 'telegramuserstalk': {
   if (!text) return reply(`*✈️ ᴛᴇʟᴇɢʀᴀᴍ ᴜsᴇʀ sᴛᴀʟᴋ*
 
 💡 ᴇxᴀᴍᴘʟᴇ:
-${prefix}tgstalk ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`)
+${prefix}tgstalk SHARZ MD`)
 
   try {
     const response = await axios.get(`${API_BASE}/telegram-user?apikey=${API_KEY}&user=${encodeURIComponent(text)}`)
@@ -5371,7 +5371,7 @@ case 'telegramchannelstalk': {
   if (!text) return reply(`*✈️ ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟ sᴛᴀʟᴋ*
 
 💡 ᴇxᴀᴍᴘʟᴇ:
-${prefix}tgchannelstalk ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`)
+${prefix}tgchannelstalk SHARZ WAZIR`)
 
   try {
     const response = await axios.get(`${API_BASE}/telegram-channel?apikey=${API_KEY}&user=${encodeURIComponent(text)}`)
@@ -5408,7 +5408,7 @@ case 'telegramgroupstalk': {
   if (!text) return reply(`*✈️ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ sᴛᴀʟᴋ*
 
 💡 ᴇxᴀᴍᴘʟᴇ:
-${prefix}tggroupstalk ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠︎︎`)
+${prefix}tggroupstalk SHARZ MD`)
 
   try {
     const response = await axios.get(`${API_BASE}/telegram-group?apikey=${API_KEY}&user=${encodeURIComponent(text)}`)
@@ -6768,10 +6768,10 @@ case 'contact': {
     
     await sleep(1000);
     
-    // 👑 Owner 1 - shadow 
+    // 👑 Owner 1 - SHARZ
     const vcard1 = 'BEGIN:VCARD\n' +
                   'VERSION:3.0\n' +
-                  'FN: 𝑺𝑯𝑨𝑫𝑶𝑾︎\n' +
+                  'FN: SHARZ\n' +
                   'TEL;type=CELL;type=VOICE;waid=923271054080:+923271054080\n' +
                   'END:VCARD';
     
@@ -12183,7 +12183,7 @@ ${prefix + command} <ᴄʜᴀɴɴᴇʟ-ʟɪɴᴋ> <ᴇᴍᴏᴊɪ>
 ${prefix + command} https://whatsapp.com/channel/xxxxxxxx 🤨
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-🙃 '☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠`)
+🙃 'SHARZ MD`)
   }
   
   if (!args[0].startsWith("https://whatsapp.com/channel/")) {
@@ -12479,7 +12479,7 @@ case 'programming': {
 
                         role: 'system',
 
-                        content: 'You are a ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠ a programming expert created by ⏤͟͞❮❮ ♧✰☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠ ✰🜲⃤҉ ❯❯⏤͟͞. Provide clear, concise code solutions with explanations.'
+                        content: 'You are a SHARZ MD a programming expert created by ⏤͟͞❮❮ ♧✰☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠ ✰🜲⃤҉ ❯❯⏤͟͞. Provide clear, concise code solutions with explanations.'
 
                     },
 
@@ -12515,7 +12515,7 @@ break;
 
 case 'repo': {
     reply(`╭━━━━━━━━━━━━━━━╮
-┃✨ ☠︎︎ 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫 ☠┃
+┃ SHARZ MD┃
 ╰━━━━━━━━━━━━━━━╯
 
 ◆ 🤖 TELEGRAM BOTS ◆
