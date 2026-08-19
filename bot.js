@@ -82,7 +82,7 @@ const gracefulShutdown = (signal) => {
 
 // ========== CHECK CHANNELS FUNCTION ==========
 const checkUserJoinedChannels = async (userId) => {
-  const channels = ['@sharzmd', '@sharzbrand','@sharzhub'];
+  const channels = ['@sharzmd', '@sharzbrand'];
   let allJoined = true;
 
   for (const channel of channels) {
