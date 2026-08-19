@@ -1,7 +1,7 @@
 {
-  "name": "shadow-md",
+  "name": "sʜᴀʀᴢ ᴍᴅ",
   "version": "2.0.0",
-  "description": "Powerful whatsapp bot created by shadow",
+  "description": "Powerful whatsapp bot created by sʜᴀʀᴢ",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -17,7 +17,7 @@
     "multi-session",
     "pairing-bot"
   ],
-  "author": "shadow",
+  "author": "sʜᴀʀᴢ",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
@@ -102,9 +102,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://t.me/shadowhacr"
+    "url": "https://t.me/sharzwazir3"
   },
   "bugs": {
-    "url": "https://t.me/shadowhacr"
+    "url": "https://t.me/sharzwazir3"
   }
 }
