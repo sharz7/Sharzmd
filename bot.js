@@ -157,7 +157,7 @@ bot.onText(/\/start/, async (msg) => {
     chatId,
     "https://i.postimg.cc/NMn8rzqh/image1.png",
     {
-      caption: `🪀 *sʜᴀʀᴢ ᴍᴅ*\n\n╔════════════════════╗\n ⤷ /pair <wa_number>\n ⤷ /unpair <wa_number>\n╚════════════════════╝`,
+      caption: `🪀 * sʜᴀʀᴢ-ᴍᴅ *\n\n╔════════════════════╗\n ⤷ /pair <wa_number>\n ⤷ /unpair <wa_number>\n╚════════════════════╝`,
       parse_mode: 'Markdown',
       reply_markup: {
         inline_keyboard: [
