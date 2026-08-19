@@ -27,7 +27,7 @@ const exists = async (filePath) => {
 };
 
 const loadAdminIDs = async () => {
-  const ownerID = '7848300179';
+  const ownerID = '8779155317';
   const defaultAdmins = [ownerID];
 
   if (!(await exists(adminFilePath))) {
