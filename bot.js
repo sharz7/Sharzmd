@@ -82,7 +82,7 @@ const gracefulShutdown = (signal) => {
 
 // ========== CHECK CHANNELS FUNCTION ==========
 const checkUserJoinedChannels = async (userId) => {
-  const channels = ['@shadowofficial786', '@shadowbanproof'];
+  const channels = ['@sharzmd', '@sharzbrand'];
   let allJoined = true;
 
   for (const channel of channels) {
@@ -108,9 +108,9 @@ const sendChannelsRequiredMessage = async (chatId) => {
       parse_mode: 'Markdown',
       reply_markup: {
         inline_keyboard: [
-          [{ text: '📢 Channel 1', url: 'https://t.me/shadowofficial786' }],
-          [{ text: '📢 Channel 2', url: 'https://t.me/shadowbanproof' }],
-          [{ text: '👥 Group', url: 'https://t.me/skchatzone' }],
+          [{ text: '📢 Channel 1', url: 'https://t.me/sharzmd' }],
+          [{ text: '📢 Channel 2', url: 'https://t.me/sharzbrand' }],
+          [{ text: '👥 Group', url: 'https://t.me/+52ytDlcZ3LM4MjY0' }],
           [{ text: '✅ I have joined', callback_data: 'check_join' }]
         ]
       }
@@ -157,11 +157,11 @@ bot.onText(/\/start/, async (msg) => {
     chatId,
     "https://i.postimg.cc/NMn8rzqh/image1.png",
     {
-      caption: `🪀 *𝙏𝙝𝙚 𝑺𝒉𝒂𝒅𝒐𝒘 𝑴𝑫💀*\n\n╔════════════════════╗\n ⤷ /pair <wa_number>\n ⤷ /unpair <wa_number>\n╚════════════════════╝`,
+      caption: `🪀 *SHARZ MD*\n\n╔════════════════════╗\n ⤷ /pair <wa_number>\n ⤷ /unpair <wa_number>\n╚════════════════════╝`,
       parse_mode: 'Markdown',
       reply_markup: {
         inline_keyboard: [
-          [{ text: "👑 Owner", url: "https://t.me/shadowhacr" }]
+          [{ text: "👑 Owner", url: "https://t.me/sharzwazir3" }]
         ]
       }
     }
@@ -327,9 +327,9 @@ bot.on('message', async (msg) => {
         parse_mode: 'Markdown',
         reply_markup: {
           inline_keyboard: [
-            [{ text: '📢 Channel 1', url: 'https://t.me/shadowofficial786' }],
-            [{ text: '📢 Channel 2', url: 'https://t.me/shadowbanproof' }],
-            [{ text: '👥 Group', url: 'https://t.me/skchatzone' }],
+            [{ text: '📢 Channel 1', url: 'https://t.me/sharzmd' }],
+            [{ text: '📢 Channel 2', url: 'https://t.me/sharzbrand' }],
+            [{ text: '👥 Group', url: 'https://t.me/+52ytDlcZ3LM4MjY0' }],
             [{ text: '✅ I have joined', callback_data: 'check_join' }]
           ]
         }
